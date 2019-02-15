@@ -1,0 +1,48 @@
+.wrapper {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+    padding-bottom: 60%;
+    height: 0;
+    background: url(img/nebo.jpg);
+    background-size: cover;
+}
+.overcloud {
+    position: relative;
+    padding:0;
+    z-index:100;
+    bottom: 0;
+    width: 100%;
+}
+.overcloud > img {
+    width: 100%;
+}
+.wrapper > img {
+    width: 100%;
+    left: 0;
+    top: -10%;
+    position: absolute;
+    user-select: none;
+    pointer-events: none;
+}
+
+@keyframes flying {
+    from {
+        transform: translateX(100%)
+    }
+    to {
+        transform: translateX(-100%)
+    }
+}
+.obl1 {
+    animation: flying 20s infinite linear
+}
+.obl2 {
+    animation: flying 40s infinite linear
+}
+.obl3 {
+    animation: flying 60s infinite linear
+}
+.obl4 {
+    animation: flying 80s infinite linear
+}
